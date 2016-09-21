@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>Functions</title>
+</head>
+<h1>Functions</h1>
+
+<script>
+
+// var color = "red";
+// var color2= "blue";
+
+
+
+
+
+function taco() {
+	var type = "carne asada";
+	var beans = "black"
+
+}
+
+function add(x,y) {
+
+	var sum = x + y; 
+	
+	// console.log (x); 
+	// console.log (y);
+	console.log(sum);
+	return sum; 
+}
+
+
+function subtract (x,y) {
+	var sumSub = x - y;
+	console.log(sumSub);
+	return sumSub;
+
+}
+
+var multiple = function (x,y) {
+	console.log ('fn subtract');
+	var product = x * y;
+	return product; 
+
+}
+
+function divide (x,y) {
+	var sumDiv = x / y; 
+	console.log(sumDiv);
+	return sumDiv; 
+}
+
+function remainder (x,y) {
+	var sumRem = x % y;
+	console.log (sumRem);
+	return sumRem;
+}
+
+function outterFunction () {
+
+	var a = 5;
+	innerFunction ();
+
+	function innerFunction () {
+		var b = 3;
+
+		var c = a + b; 
+		conole.log("c", c);
+		return b; 
+
+	}
+
+	var d = a + b;
+	console.log("d", d);
+
+	return undefined; 
+}
+
+
+
+
+
+
+</script>  
+</body>
+</html> 
