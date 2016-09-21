@@ -31,7 +31,7 @@ function calcCircumference (r) {
 }
 
 function calcLongestSide (a,b) {
-	var pythCalc = math.sqrt((a *a) + (b * b))
+	var pythCalc = Math.sqrt((a *a) + (b * b))
 	console.log(a)
 	console.log(b)
 	console.log(pythCalc)
