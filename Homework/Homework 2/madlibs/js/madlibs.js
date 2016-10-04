@@ -63,6 +63,7 @@ function generateStartup() {
 function saveFavorite() {
 
 	// TODO: add the new idea to the array
+	favorites.push(startupIdea);
 
 }
 
@@ -80,7 +81,12 @@ function printFavorites() {
 	// - hint: loop through all the favorites
 	// - this should be stored in a variable named favoritesText
 	// - each favorite should have an html br element between it (EG: "<br>")
+	var favoritesText = "";
+	
+	for (var i = 0; i < favorites.length; i++) {
+		favoritesText + favoritesText + favorites[i]+ "</br>";
 
+	}
 
 
 	// DONE: update the list element with the
