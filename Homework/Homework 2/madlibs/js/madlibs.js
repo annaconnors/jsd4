@@ -74,7 +74,7 @@ function saveFavorite() {
 function printFavorites() {
 	// DONE: clear out favorites section each time
 	// before displaying new list of favorites
-	list.innerHTML = '';
+	list.innerHTML = "";
 
 
 	// TODO: concatenate all the favorites into one string
@@ -84,7 +84,10 @@ function printFavorites() {
 	var favoritesText = "";
 	
 	for (var i = 0; i < favorites.length; i++) {
-		favoritesText + favoritesText + favorites[i]+ "</br>";
+
+		if (i + 1 <= favorites.length) {
+			favoritesText = favoritesText + favorites[i]+ "</br>";
+		}
 
 	}
 
