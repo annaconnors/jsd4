@@ -6,6 +6,67 @@
 </head>
 <body>
 <h1>Variables</h1>
-<script src="project.js"></script>
+<ul> 
+	<li> cool </li>
+	<li> idk </li>
+	<li> 
+	<p> Fish Tacos</p>
+	<img width="100" src="http://cdn-image.foodandwine.com/sites/default/files/200806-xl-fish-tacos.jpg">  
+	</li> 
+</ul>
+
 </body>
+
+<script> 
+
+var ul = document.querySelector("ul"); 
+
+// div.innerHTML = "<h2> sunt incupla </h2>"; 
+
+//technique #! = using createElement/appendChild
+
+function createMenuItem() {
+
+	// step 1: create elements 
+
+	var li = document.createElement("li");
+	var p = document.createElement("p");
+	var img = document.createElement("img"); 
+
+	//step 2: content and attributes 
+	p.innerHTML = "Fish Tacos"; 
+	img.src = "http://cdn-image.foodandwine.com/sites/default/files/200806-xl-fish-tacos.jpg"; 
+
+	//step 3: append new elements to DOM 
+	li.appendChild(img); 
+	li.appendChild(p); 
+	console.log(li);
+	ul.appendChild(li);  
+
+}
+
+
+//technique #2: using innerHTML 
+function createMenuItemTemplate() {
+
+	var li = document.createElement("li");
+	var template = "<li>" +  
+		"<p>Beef taco</p>" +  
+		'<img src="https://images-gmi-pmc.edge-generalmills.com/a1e50cad-403a-47ce-aa10-62b8b8af5a4d.jpg">' +
+	"</li>"; 
+
+	li.innerHTML = template; 
+	ul.appendChild(li); 
+
+	console.log(template);  
+}
+
+
+</script>
+
+<style> 
+	img {
+		width: 100px;
+	}
+</style>
 </html>
