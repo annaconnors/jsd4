@@ -17,7 +17,7 @@ function playSong(bottle) {
         var lyric = bottle + " bottles of beer on the wall, " + bottle + " bottles of beer. <br>" +
         "Take one down and pass it around, " + (bottle - 1) + " bottles of beer on the wall."
     }
- 	li.innerHTML = phrase;
+ 	li.innerHTML = lyric;
     ul.appendChild(li);
 
 }
