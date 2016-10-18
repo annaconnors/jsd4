@@ -30,4 +30,4 @@ for (var i = 99; i > -1; i--) {
 // Update page
 // ------------------------------------------
 
-console.log("99 bottles of beer on the wall!");
+// console.log("99 bottles of beer on the wall!");
