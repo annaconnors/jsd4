@@ -46,6 +46,7 @@ cautionLight.addEventListener("click", carefulLight);
 function carefulLight() {
 	console.log("carefulLight");
 	trafficLight.classList.add("slow");
+	trafficLight.classList.remove("go","stop");
 	timer = setInterval(yellowBlink, 2000)
 }
 
