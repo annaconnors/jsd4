@@ -1,0 +1,23 @@
+{
+  "name": "jsd4",
+  "version": "1.0.0",
+  "description": "my JSD4 projects and homeworks",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annaconnors/jsd4.git"
+  },
+  "author": "annaconnors",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annaconnors/jsd4/issues"
+  },
+  "homepage": "https://github.com/annaconnors/jsd4#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
