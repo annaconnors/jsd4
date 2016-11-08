@@ -21,41 +21,12 @@
     </form>
 
     <div class="details">
-        <div class="image">
-            <img class="poster" src="http://ia.media-imdb.com/images/M/MV5BZDM2YjYwYWMtMWZlNi00ZDQxLWExMDctMDAzNzQ0OTkzZjljXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg">
         </div>
-        <div class="text">
-            <h2 class="title">Terminator 2: Judgment Day</h2>
-            <p class="plot">A cyborg, identical to the one who failed to kill Sarah Connor, must now protect her young son, John Connor, from a more advanced cyborg, made out of liquid metal.</p>
-            <p><a class="imdb-link" href="http://www.imdb.com/title/tt0103064">View on IMDb</a></p>
-        </div>
-    </div>
+
 
     <ul class="results">
-
-        <!-- Sample Movie Template:
-                <li id="tt0181852">
-                    <img src="http://ia.media-imdb.com/images/M/MV5BMTk5NzM1ODgyN15BMl5BanBnXkFtZTcwMzA5MjAzMw@@._V1_SX300.jpg">
-                    <p>Terminator 3: Rise of the Machines</p>
-                </li>
-        -->
-
-        <li id="tt0088247">
-            <img src="http://ia.media-imdb.com/images/M/MV5BODE1MDczNTUxOV5BMl5BanBnXkFtZTcwMTA0NDQyNA@@._V1_SX300.jpg">
-            <p>The Terminator</p>
-        </li>
-
-        <li id="tt0103064">
-            <img src="http://ia.media-imdb.com/images/M/MV5BZDM2YjYwYWMtMWZlNi00ZDQxLWExMDctMDAzNzQ0OTkzZjljXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg">
-            <p>Terminator 2: Judgment Day</p>
-        </li>
-
-        <li id="tt0181852">
-            <img src="http://ia.media-imdb.com/images/M/MV5BMTk5NzM1ODgyN15BMl5BanBnXkFtZTcwMzA5MjAzMw@@._V1_SX300.jpg">
-            <p>Terminator 3: Rise of the Machines</p>
-        </li>
-
     </ul>
+
 
 </main>
 
@@ -71,7 +42,7 @@
 
 
     <p class="question">2. What are two types of Events that are cancellable?</p>
-    <p class="answer"> prevent.Default() and </p>
+    <p class="answer"> Onclick and Onchange. You can canel with prevent.Default()</p>
 
 
     <p class="question">3. When using the OMDB API's search endpoint, what is the property name for the array of movie objects? Remember, JavaScript is case sensitive.</p>
@@ -83,7 +54,7 @@
 
 
     <p class="question">5. What are two different techniques to set the ID attribute to "tt0319343" for an Element?</p>
-    <p class="answer"></p>
+    <p class="answer">li.id = "tt0319343" or p.id = movie.imdbID</p>
 
 
     <p class="question">6. When using the OMDB API's movie details endpoint, what data type is the "Genre" property?</p>
@@ -91,12 +62,13 @@
 
 
     <p class="question">7. How could you convert the data in the "Genre" property into an array?</p>
-    <p class="answer">     </p>
+    <p class="answer"> var array = string.split(',');</p>
 
 
 </aside>
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="js/movieSearch.js"></script>
 </body>
 </html>
